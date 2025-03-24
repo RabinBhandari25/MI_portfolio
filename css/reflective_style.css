@@ -1,0 +1,16 @@
+#main_body{
+    width:60%;
+    margin:auto;
+}
+
+#main_body>h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+#sus_link{
+
+    margin-top: 25px;
+    text-align: center;
+}

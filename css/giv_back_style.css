@@ -1,0 +1,32 @@
+
+
+
+#main_body>h1{
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    width: 60%;
+    margin-top: 50px;
+}
+
+#main_body > div{
+    /* border: 1px solid red; */
+    width:55%;
+    margin: auto;
+}
+
+#main_body>#content{
+    
+    margin-bottom: 10px;
+}
+
+
+#image_holder > img{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+#links{
+    text-align: center;
+}

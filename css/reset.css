@@ -1,0 +1,211 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+*{
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-size: 20px;
+  /* font-weight: bold; */
+
+  font-weight: bolder;
+  cursor: crosshair;
+}   
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  
+  /* background-color:#82cf4b; */
+
+
+  color: #0b6602;
+  /* background-color: #ACDF87; */
+  background-color: #9ce17b;
+
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+.footer_name{
+  /* border: 1px solid red; */
+
+
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#final_image{
+
+
+width: 50%;
+margin: auto;
+display: flex;
+
+align-items: center;
+justify-content: center;
+}
+
+
+#final_image > img{
+  width: 100px;
+  margin-bottom: 20px;
+
+}
+
+header{
+height: 550px;
+margin-left: auto;
+margin-right: 0;
+/* border: 3px solid black; */
+}
+
+header > img{
+width: 55%;
+
+margin: auto;
+height: 450px;
+margin-top: 90px;
+margin-bottom: auto;
+overflow: hidden;
+
+
+/* filter: drop-shadow(0px 0px 12px #0b6602); */
+
+}
+
+nav{
+/* border: 1px solid black; */
+width: 85%;
+height: 80px;
+margin: auto;
+
+display:flex;
+justify-content: center;
+
+margin-bottom: 90px;
+}
+
+
+nav>li{
+
+/* border: 1px solid black; */
+
+list-style: none;
+font-weight: bold;
+font-style: italic;
+
+
+width: 100%;
+height: 100%;
+text-align: center;
+font-size: 1.1rem;
+
+
+
+}
+
+nav>li>a{
+text-decoration: none;
+font-size: 1.1rem;
+text-align: center;
+width: 100%;
+
+color: #0b6602;
+
+
+}
+
+nav>li>div{
+border: 1px solid red;
+width: 100%;
+}
+
+nav>li:hover{
+color:yellow;
+
+}
+nav>li>a:hover{
+color: yellow;
+}
+
+nav>#current_page,
+nav>#current_page>a{
+color: yellow;
+text-decoration: underline;
+}
+
+
+.dropdown {
+display: none;
+position: absolute;
+
+width: 350px;
+  /* border: none; */
+
+  background-color: #0b6602;
+
+
+/* width: 100%; Match the width of the parent li */
+/* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); */
+}
+
+.dropdown .items {
+display: block;
+padding: 10px 15px; 
+text-decoration: none;
+
+color: #9ce17b;
+
+/* color: #0b6602; */
+}
+
+
+
+.dropdown .items:hover {
+color:yellow;
+}
+
+
+nav li:hover .dropdown {
+display: block;
+} 

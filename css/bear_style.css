@@ -1,0 +1,120 @@
+html >*{
+        color: green;
+
+        background-color: #FFFDD0;
+
+}
+
+#main_picture{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: auto;
+
+    margin-bottom: 25px;
+    height: 555px;
+
+
+    background: url(../resources/mi_paint.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+#main_picture >h1{
+
+    /* border: 1px solid red; */
+
+    /* width: 50%; */
+    text-align: center;
+    /* margin: auto; */
+
+    background-color: #fffdd0;
+    font-size: 2rem;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+nav{
+    margin-bottom: unset;
+    margin-bottom: 35px;
+}
+
+nav>li:hover{
+
+    color: unset;
+    text-decoration: underline;
+    animation: rotate1 0.5s ease-in-out infinite alternate;
+
+
+}
+nav>li>a:hover{
+    color: unset;
+    text-decoration: underline;
+    animation: rotate1 0.5s ease-in-out infinite alternate;
+
+}
+
+nav>#current_page{
+    color: unset;
+    animation: rotate1 0.5s ease-in-out infinite alternate;
+
+}
+
+
+#content{
+    width: 60%;
+    margin: auto;
+}
+
+#bear_n_info {
+    width: 60%;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.bear_pic {
+    width: 80%;
+    height: 500%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; /* Space between images */
+}
+
+.bear_pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.bear_pic p {
+    text-align: center;
+    background-color: #FFFDD0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+@keyframes rotate1 {
+
+    from{
+        transform: rotate(5deg);
+    }
+    to{
+        transform: rotate(-5deg);
+
+    }
+    
+}
